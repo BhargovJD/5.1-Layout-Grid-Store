@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+article{
+    border: 4px solid black;
+
+}
+
+h2{
+    background-color: #f7f7f7;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.shipping-info{
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+
+
+.more-info:link, .more-info:visited{
+    color: black;
+    margin-bottom: 30px;
+    display: inline-block;
+
+}
+
+
+.more-info:hover, .more-info:active {
+    text-decoration: none;
+}
+
+.detail-title{
+    text-transform: uppercase;
+    font-size: 16px;
+    /* margin-bottom: 15px; */
+    /* margin-top: 30px; */
+}
+
+
+.detail-list{
+    list-style: square;
+    padding-left: 20px;
+}
+
+button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-top: 4px solid black;
+
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    grid-column: 1/-1;
+
+
+}
+
+.product{
+    width: 825px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    position: relative;
+
+}
+
+.detail-list li{
+margin-bottom: 10px;
+}
+
+.sale{
+    background-color: #ec2f2f;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 7px 15px;
+    display: inline-block;
+    /* or */
+    /* width: 40px;
+    text-align: center; */
+    position: absolute;
+    top: -17px;
+    left: -38px;
+
+    letter-spacing: 2px;
+}
+
+
+
+.color{
+    background-color: black;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.color-blue{
+    background-color: blue;
+}
+.color-red{
+    background-color: red;
+}
+.color-yellow{
+    background-color: yellow;
+}
+.color-green{
+    background-color: green;
+}
+.color-brown{
+    background-color: brown;
+}
+
+
+/* CSS GRID  */
+
+.product{
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    column-gap: 40px;
+}
+
+.p-title{
+    grid-column: 1/-1;
+}
+
+.btn{
+    grid-column: 1/-1;
+
+}
+
+.img{
+    height: 250px;
+    width: 250px;
+}
